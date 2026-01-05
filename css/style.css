@@ -1,0 +1,38 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.container-utama {
+  flex: 1 0 auto;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 200px;
+  }
+
+  .carousel-caption h2 {
+    font-size: 1rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.5rem;
+    max-width: 100% !important;
+  }
+}
